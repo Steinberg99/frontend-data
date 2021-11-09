@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overgewicht in Nederland</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Introduction section. -->
+    <section id="sectionOne">
+      <h1>Overgewicht in Nederland</h1>
+      <p>
+        Op 8 november 2021 ben ik samen met mijn klas begonnen aan het vak
+        <span>Frontend Data</span>. We kregen de opdracht om met
+        <span>D3.js</span> een datavisualisatie te maken. Ik heb er voor gekozen
+        om de problematiek rondom overgewicht in Nederland in kaart te brengen.
+        Voor deze visualisatie heb ik naar de volgende onderwerpen gekeken.
+      </p>
+      <ul>
+        <li>Overgewicht & obesitas in Nederland.</li>
+        <li>Het aantal fastfoodrestaurants in Nederland.</li>
+      </ul>
+    </section>
+
+    <!-- Overweight section. -->
+    <section>
+      <!-- Overweight map. -->
+      <h2>Overgewicht per provincie</h2>
+      <p>Bla</p>
+      <svg id="overweightMap"></svg>
+
+      <!-- Overweight chart. -->
+      <h3 id="overweightChartHeader">Bla</h3>
+      <svg id="overgewichtChart"></svg>
+    </section>
+
+    <!-- Obesity section. -->
+    <section>
+      <!-- Obesity map. -->
+      <h2>Obesitas per gemeente</h2>
+      <svg id="obesityMap"></svg>
+
+      <!-- Obesity chart. -->
+      <h3 id="obesityChartHeader"></h3>
+      <svg id="obesityChart"></svg>
+    </section>
+
+    <!-- Fast food section. -->
+    <section>
+      <h2>Toename in fastfoodrestaurants per gemeente</h2>
+      <svg id="fastFoodMap"></svg>
+    </section>
+  </body>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://use.typekit.net/isz3slv.css");
+
+*,
+html {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Zen Antique", serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1em 0 1em 0;
+}
+
+span {
+  font-family: courier-std, monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+}
+
+#sectionOne ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sectionOne ul li {
+  list-style-type: disc;
+}
+
+#sectionOne ul li + li {
+  padding-top: 0.25em;
+}
+
+svg {
+  display: block;
+
+  width: 384px;
+  height: 384px;
+
+  margin: 0 auto;
+}
+
+.province {
+  stroke: white;
+  stroke-width: 0.5;
+}
+
+.province:hover {
+}
