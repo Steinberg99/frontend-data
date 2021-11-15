@@ -4,12 +4,10 @@
 *,
 html {
   box-sizing: border-box;
-
-  margin: 0;
-  padding: 0;
-
   font-family: "Zen Antique", serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -61,19 +59,83 @@ span {
   padding-top: 0.25em;
 }
 
-svg {
+#sectionTwo p {
+  padding-top: 1.5em;
+}
+
+#overweightMap {
+  box-sizing: content-box;
   display: block;
-
-  width: 384px;
-  height: 384px;
-
+  width: 496px;
+  height: 496px;
   margin: 0 auto;
+  padding: 1em;
+  background-color: #f4f6f4;
+  border: 2px solid black;
 }
 
 .province {
   stroke: white;
-  stroke-width: 0.5;
+  stroke-width: 0.75;
 }
 
 .province:hover {
+  stroke-width: 3;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0 1em 0;
+}
+
+form input {
+  margin-right: 0.25em;
+}
+
+#overweightMapLegend {
+  box-sizing: content-box;
+  padding: 1em;
+  stroke-width: 2px;
+}
+
+/* Pure CSS custom radio buttons borrowed from https://moderncss.dev/pure-css-custom-styled-radio-buttons/. */
+input[type="radio"] {
+  display: grid;
+  place-content: center;
+
+  appearance: none;
+  color: black;
+  background-color: #fff;
+
+  width: 1em;
+  height: 1em;
+  border: 2px solid black;
+  border-radius: 50%;
+
+  transform: translateY(-1px);
+  transform: translateX(-1px);
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 100ms transform ease-in-out;
+  box-shadow: inset 1em 1em black;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+form label {
+  padding-right: 1em;
+}
+
+form label:last-child {
+  padding: 0;
 }

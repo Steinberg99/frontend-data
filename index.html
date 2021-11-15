@@ -16,41 +16,44 @@
         <span>Frontend Data</span>. We kregen de opdracht om met
         <span>D3.js</span> een datavisualisatie te maken. Ik heb er voor gekozen
         om de problematiek rondom overgewicht in Nederland in kaart te brengen.
-        Voor deze visualisatie heb ik naar de volgende onderwerpen gekeken.
+        Voor deze visualisatie heb ik naar de volgende onderwerp gekeken.
       </p>
       <ul>
-        <li>Overgewicht & obesitas in Nederland.</li>
-        <li>Het aantal fastfoodrestaurants in Nederland.</li>
+        <li>Overgewicht in Nederland per gemeente.</li>
       </ul>
     </section>
 
     <!-- Overweight section. -->
-    <section>
+    <section id="sectionTwo">
       <!-- Overweight map. -->
       <h2>Overgewicht per provincie</h2>
-      <p>Bla</p>
+      <p>
+        In de onderstaande kaart wordt het percentage van mensen met overgewicht
+        per gemeente weergegeven. Hoe donkerder de kleur, hoe hoger het
+        percentage.
+      </p>
       <svg id="overweightMap"></svg>
 
+      <!-- Overweight map lenged. -->
+      <svg id="overweightMapLegend"></svg>
+
+      <!-- Radio buttons to select a jear. -->
+      <form id="radioButtons">
+        <input type="radio" name="jaar" id="2005-2007" checked />
+        <label for="2005-2007">2005-2007</label>
+        <input type="radio" name="jaar" id="2008-2010" />
+        <label for="2008-2010">2008-2010</label>
+        <input type="radio" name="jaar" id="2011-2013" />
+        <label for="2011-2013">2011-2013</label>
+        <input type="radio" name="jaar" id="2014-2016" />
+        <label for="2014-2016">2014-2016</label>
+        <input type="radio" name="jaar" id="2017-2019" />
+        <label for="2017-2019">2017-2019</label>
+      </form>
+
       <!-- Overweight chart. -->
-      <h3 id="overweightChartHeader">Bla</h3>
-      <svg id="overgewichtChart"></svg>
-    </section>
-
-    <!-- Obesity section. -->
-    <section>
-      <!-- Obesity map. -->
-      <h2>Obesitas per gemeente</h2>
-      <svg id="obesityMap"></svg>
-
-      <!-- Obesity chart. -->
-      <h3 id="obesityChartHeader"></h3>
-      <svg id="obesityChart"></svg>
-    </section>
-
-    <!-- Fast food section. -->
-    <section>
-      <h2>Toename in fastfoodrestaurants per gemeente</h2>
-      <svg id="fastFoodMap"></svg>
+      <h3 id="overweightChartHeader">Overgewicht in heel Nederland</h3>
+      <!-- <svg id="overgewichtChart"></svg> -->
     </section>
   </body>
   <script src="https://d3js.org/d3.v7.min.js"></script>
