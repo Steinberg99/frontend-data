@@ -150,6 +150,14 @@ form label:last-child {
   align-items: center;
 }
 
+#sectionThree p {
+  padding-top: 1.5em;
+}
+
 #sectionThree svg text {
   font-size: 0.75em;
+}
+
+footer {
+  padding: 3em 0 4em 0;
 }
