@@ -29,7 +29,7 @@
       <h2>Overgewicht per provincie</h2>
       <p>
         In de onderstaande kaart wordt het percentage van mensen met overgewicht
-        per gemeente weergegeven. Hoe donkerder de kleur, hoe hoger het
+        per provincie weergegeven. Hoe donkerder de kleur, hoe hoger het
         percentage.
       </p>
       <svg id="overweightMap"></svg>
@@ -38,7 +38,7 @@
       <svg id="overweightMapLegend"></svg>
 
       <!-- Radio buttons to select a jear. -->
-      <form id="radioButtons">
+      <form id="proviceRadioButtons">
         <input type="radio" name="jaar" id="2005-2007" checked />
         <label for="2005-2007">2005-2007</label>
         <input type="radio" name="jaar" id="2008-2010" />
@@ -50,13 +50,34 @@
         <input type="radio" name="jaar" id="2017-2019" />
         <label for="2017-2019">2017-2019</label>
       </form>
-
-      <!-- Overweight chart. -->
-      <h3 id="overweightChartHeader">Overgewicht in heel Nederland</h3>
-      <!-- <svg id="overgewichtChart"></svg> -->
     </section>
+
+    <section id="sectionThree">
+      <!-- Overweight chart. -->
+      <h2>Overgewicht in heel Nederland</h2>
+      <p></p>
+      <svg id="overweightChart"></svg>
+
+      <!-- Radio buttons to select a period. -->
+      <form id="netherlandsRadioButtons">
+        <input type="radio" name="periode" id="2000-2020" checked />
+        <label for="2000-2020">2000-2020</label>
+        <input type="radio" name="periode" id="2010-2020" />
+        <label for="2010-2020">2010-2020</label>
+      </form>
+    </section>
+    <footer>
+      <p>
+        Deze website is volledig geproduceerd in het tijdsspanne van twee weken
+        door <a href="www.steinbergervoet.nl">Stein Bergervoet</a>. De code van
+        deze website is te vinden op
+        <a href="https://github.com/Steinberg99/frontend-data">GitHub</a>.
+      </p>
+    </footer>
   </body>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://unpkg.com/topojson@3"></script>
-  <script src="index.js"></script>
+  <script src="./data.js"></script>
+  <script src="./index.js"></script>
+  <script src="./chart.js"></script>
 </html>

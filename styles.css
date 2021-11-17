@@ -59,6 +59,12 @@ span {
   padding-top: 0.25em;
 }
 
+#sectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #sectionTwo p {
   padding-top: 1.5em;
 }
@@ -68,10 +74,8 @@ span {
   display: block;
   width: 496px;
   height: 496px;
-  margin: 0 auto;
+  margin-bottom: 0.5em;
   padding: 1em;
-  background-color: #f4f6f4;
-  border: 2px solid black;
 }
 
 .province {
@@ -79,15 +83,11 @@ span {
   stroke-width: 0.75;
 }
 
-.province:hover {
-  stroke-width: 3;
-}
-
 form {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5em 0 1em 0;
+  padding: 0.5em 0 1em 0;
 }
 
 form input {
@@ -97,7 +97,11 @@ form input {
 #overweightMapLegend {
   box-sizing: content-box;
   padding: 1em;
-  stroke-width: 2px;
+  margin: 0 auto;
+}
+
+#overweightMapLegend text {
+  font-size: 0.75em;
 }
 
 /* Pure CSS custom radio buttons borrowed from https://moderncss.dev/pure-css-custom-styled-radio-buttons/. */
@@ -138,4 +142,14 @@ form label {
 
 form label:last-child {
   padding: 0;
+}
+
+#sectionThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sectionThree svg text {
+  font-size: 0.75em;
 }
