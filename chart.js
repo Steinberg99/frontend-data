@@ -71,7 +71,7 @@ function updateChart(data) {
           .attr("width", width)
           .attr(
             "height",
-            d => (d.overweight / 100) * (chartHeight - 2 * padding)
+            d => (d.overweight / 100) * (chartHeight - 2 * padding) // Calculate the height of the rectangle.
           )
           .attr(
             "transform",
