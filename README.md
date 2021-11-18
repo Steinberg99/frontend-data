@@ -12,7 +12,7 @@ I used the answers to this question to create my visualizations. Feel free to cl
 
 > **NOTE:** The content on this website is completely written in Dutch!
 
-![homescreen](./images/homescreen.png)
+![homescreen](./images/home.png)
 
 ## 🧑‍💻 How to install
 
