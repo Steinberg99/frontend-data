@@ -12,6 +12,8 @@ I used the answers to this question to create my visualizations. Feel free to cl
 
 > **NOTE:** The content on this website is completely written in Dutch!
 
+![homescreen](./images/homescreen.png)
+
 ## 🧑‍💻 How to install
 
 The installation of this project is pretty straight forward. Simply clone this repository using the following command and open the index.html file.
