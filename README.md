@@ -22,7 +22,7 @@ The installation of this project is pretty straight forward. Simply clone this r
 
 ## 💻 Technologies
 
-During this project I made use of the following librarie.
+During this project I made use of the following library.
 
 - [D3js](https://d3js.org/)
 
